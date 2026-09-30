@@ -1,4 +1,4 @@
-# 🧹 Deduplicação de Cadastros
+# Deduplicação de Cadastros
 
 [![Testes](https://github.com/gabriellapresbitero/deduplicacao-cadastros/actions/workflows/testes.yml/badge.svg)](https://github.com/gabriellapresbitero/deduplicacao-cadastros/actions/workflows/testes.yml)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
