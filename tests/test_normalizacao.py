@@ -42,11 +42,11 @@ class TestEmail(unittest.TestCase):
 
 class TestTelefone(unittest.TestCase):
     def test_formatos_do_mesmo_celular(self):
-        formatos = ["(81) 98872-0211", "+55 81 98872-0211", "081 98872-0211", "81988720211",
-                    "(81) 8872-0211"]  # o último é o formato antigo, sem o 9
+        formatos = ["(81) 99999-0000", "+55 81 99999-0000", "081 99999-0000", "81999990000",
+                    "(81) 9999-0000"]  # o último é o formato antigo, sem o 9
         for telefone in formatos:
             with self.subTest(telefone=telefone):
-                self.assertEqual(norm.normalizar_telefone(telefone), "81988720211")
+                self.assertEqual(norm.normalizar_telefone(telefone), "81999990000")
 
     def test_telefone_fixo_nao_ganha_nove(self):
         self.assertEqual(norm.normalizar_telefone("(81) 3222-1234"), "8132221234")

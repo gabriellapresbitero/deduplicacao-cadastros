@@ -22,7 +22,7 @@ class TestDeduplicar(unittest.TestCase):
     def test_junta_mesma_pessoa_em_formatos_diferentes(self):
         entrada = cadastro(
             (1, "Maria da Silva", "529.982.247-25", "", "", "", "Recife", "2020-01-01"),
-            (2, "MARIA SILVA", "52998224725", "maria@gmail.com", "(81) 8872-0211", "", "recife", "2024-05-01"),
+            (2, "MARIA SILVA", "52998224725", "maria@gmail.com", "(81) 9999-0000", "", "recife", "2024-05-01"),
             (3, "João Pereira", "", "joao@gmail.com", "", "", "Olinda", "2023-01-01"),
         )
         resultado = deduplicar(entrada)
@@ -32,7 +32,7 @@ class TestDeduplicar(unittest.TestCase):
     def test_registro_mestre_combina_os_campos(self):
         entrada = cadastro(
             (1, "Maria Silva", "529.982.247-25", "antigo@gmail.com", "", "10/05/1990", "", "2019-01-01"),
-            (2, "MARIA CLARA DA SILVA", "52998224725", "novo@gmail.com", "81988720211", "", "Recife", "2024-01-01"),
+            (2, "MARIA CLARA DA SILVA", "52998224725", "novo@gmail.com", "81999990000", "", "Recife", "2024-01-01"),
         )
         mestre = deduplicar(entrada).unificados.iloc[0]
         self.assertEqual(mestre["nome"], "Maria Clara da Silva")  # o nome mais completo

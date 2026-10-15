@@ -14,9 +14,9 @@ acaba com a mesma pessoa cadastrada várias vezes:
 
 | id | nome | cpf | telefone | e-mail |
 |---|---|---|---|---|
-| 12 | Maria da Silva | 529.982.247-25 | (81) 8872-0211 | |
-| 87 | MARIA SILVA | 52998224725 | +55 81 98872-0211 | maria@gmail.com |
-| 430 | Mraia Clara Silva | | 81988720211 | MARIA@GMAIL.COM |
+| 12 | Maria da Silva | 529.982.247-25 | (81) 9999-0000 | |
+| 87 | MARIA SILVA | 52998224725 | +55 81 99999-0000 | maria@gmail.com |
+| 430 | Mraia Clara Silva | | 81999990000 | MARIA@GMAIL.COM |
 
 Isso gera custo real: a mesma pessoa recebe três cartas, o histórico de compras fica partido, as
 métricas de "clientes ativos" ficam infladas e a empresa pode descumprir a LGPD ao não saber
