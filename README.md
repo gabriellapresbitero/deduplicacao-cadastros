@@ -144,5 +144,16 @@ tests/
 - [ ] Endereço e CEP como evidência
 - [ ] Tela simples para revisar os pares da zona cinzenta
 
+## Blocagem
+
+Medido na base de exemplo (1.582 cadastros fictícios de 1.044 pessoas):
+
+- 2.168 pares candidatos de 1.250.571 possíveis (0,17%).
+- 652 dos 664 pares duplicados viram candidatos (98,2%). Contando os que se ligam por um terceiro cadastro da mesma pessoa, são 657 (98,9%).
+- 7 pares se perdem de vez. Todos têm erro de digitação nas 3 primeiras letras do primeiro ou do último nome e nenhum CPF, e-mail ou telefone em comum.
+- O teto de 50 cadastros por bloco não cortou nenhum par nesta base.
+
+No limiar padrão (0,75), a deduplicação junta 526 dos 664 pares (recall de 79,2%). Dos 138 que ficam de fora, 7 se perdem na blocagem e 131 não atingem a pontuação mínima.
+
 ---
 Feito por **Gabriella Presbítero** · Licença MIT · Todos os dados de exemplo são fictícios.
